@@ -12,3 +12,10 @@ pub struct GenericResponse {
 pub struct TerrainListResponse {
     pub data: Vec<Terrain>,
 }
+
+#[derive(Serialize)]
+pub struct SingleTerrainResponse {
+    pub data: Terrain,
+    pub success: bool,
+    pub message: String,
+}
